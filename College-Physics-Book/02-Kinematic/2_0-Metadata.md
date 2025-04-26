@@ -1,4 +1,5 @@
-This file is purely for managament. 
+**This file is purely for management.**
+# Progress
 - [ ] 2.1 Displacement
 - [ ] 2.2 Vectors, Scalars, and Coordinate Systems
 - [ ] 2.3 Time, Velocity, and Speed
@@ -7,3 +8,6 @@ This file is purely for managament.
 - [ ] 2.6 Problem-Solving Basics for One-Dimensional Kinematics
 - [ ] 2.7 Falling Objects
 - [ ] 2.8 Graphical Analysis of One-Dimensional Motion
+
+# Todo:
+- Think a better ways for linking!!!
