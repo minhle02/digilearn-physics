@@ -17,11 +17,11 @@ Tìm các thông tin sau cho đường đi A trong hình dưới
 
 #### Đáp án 2.1.1
 
-**(a)** 7 m
+**(a)** [7] m
 
-**(b)** 7 m
+**(b)** [7] m
 
-**(c)** +7 m
+**(c)** [+7] m
 
 ### Câu hỏi 2.1.2 - Easy
 > Translate from [Q2](https://openstax.org/books/college-physics-ap-courses-2e/pages/2-problems-exercises)
@@ -38,11 +38,11 @@ Tìm các thông tin sau cho đường đi B trong hình dưới
 
 #### Đáp án 2.1.2:
 
-**(a)** 4 m
+**(a)** [4] m
 
-**(b)** 4 m
+**(b)** [4] m
 
-**(c)** -7 m
+**(c)** [-7] m
 
 ### Câu hỏi 2.1.3 - Easy
 > Translate from [Q3](https://openstax.org/books/college-physics-ap-courses-2e/pages/2-problems-exercises)
@@ -59,11 +59,11 @@ Tìm các thông tin sau cho đường đi C trong hình dưới:
 
 #### Đáp án 2.1.3:
 
-**(a)** 13 m
+**(a)** [13] m
 
-**(b)** 9 m
+**(b)** [9] m
 
-**(c)** 9 m
+**(c)** [9] m
 
 ### Câu hỏi 2.1.4 - Easy
 > Translate from [Q4](https://openstax.org/books/college-physics-ap-courses-2e/pages/2-problems-exercises)
@@ -80,11 +80,11 @@ Tìm các thông tin sau cho đường đi D trong hình dưới:
 
 #### Đáp án 2.1.4:
 
-**(a)** 7 m
+**(a)** [7] m
 
-**(b)** 5 m
+**(b)** [5] m
 
-**(c)** -5 m
+**(c)** [-5] m
 
 ### Câu hỏi 2.1.5 - Easy
 
@@ -135,3 +135,58 @@ Vi khuẩn di chuyển tới lui bằng cách sử dụng tiên mao (bộ phận
 (B)
 
 ## 2.2. Thời gian, vận tốc, và tốc độ
+
+### Câu hỏi 2.2.1 - Easy
+> Translate from [Q5](https://openstax.org/books/college-physics-ap-courses-2e/pages/2-problems-exercises)
+
+Biết khoảng cách từ Trái Đất đến Mặt Trời là 150 triệu km $(1.5 * 10^8\ km)$
+
+(a) Tính tốc độ trung bình của Trái Đất so với Mặt Trời.
+
+(b) Vận tốc trung bình của Trái Đất trong khoảng thời gian một năm là bao nhiêu?
+
+#### Đáp án
+
+(a) [3.0 * 10^4] m/s
+
+(b) [0] m/s
+
+### Câu 2.2.2 - Easy
+
+> Translate from [Q7](https://openstax.org/books/college-physics-ap-courses-2e/pages/2-problems-exercises)
+
+Các lục địa Bắc Mỹ và châu Âu đang trôi dạt xa nhau với tốc độ khoảng 3 cm/năm. Với tốc độ này, mất bao lâu để chúng trôi dạt xa nhau thêm 500 km so với khoảng cách hiện tại?
+
+#### Đáp án
+[2 * 10^7] năm
+
+### Câu 2.2.3 - Medium
+> Translate from [Q9](https://openstax.org/books/college-physics-ap-courses-2e/pages/2-problems-exercises)
+
+Vào ngày 26 tháng 5 năm 1934, đoàn tàu Zephyr, một đoàn tàu diesel làm bằng thép không gỉ, đã lập kỷ lục thế giới về tốc độ di chuyển trên đoạn đường dài không ngừng nghỉ cho tàu hỏa. Chuyến đi của nó từ Denver đến Chicago mất 13 giờ, 4 phút, 58 giây và được chứng kiến bởi hơn một triệu người dọc theo tuyến đường. Tổng quãng đường đi được là 1633,8 km. 
+Tốc độ trung bình của nó là bao nhiêu theo km/h và m/s?
+
+#### Đáp án
+
+[124.88] km/h và [34.689] m/s
+
+### Câu 2.2.4 - Medium
+
+> Translate from [Q11](https://openstax.org/books/college-physics-ap-courses-2e/pages/2-problems-exercises)
+
+Một sinh viên lái xe từ nhà đến trường đại học và thấy công tơ mét (thiết bị đo khoảng cách trên xe) đã tăng thêm 12 km. Chuyến đi mất 18 phút.
+
+(a) Tốc độ trung bình của chuyến đi là bao nhiêu?
+
+(b) Nếu khoảng cách theo đuờng chim bay từ nhà đến trường đại học là 10,3 km theo hướng $25\degree$ về phía đông nam, thì vận tốc trung bình của chuyến đi là bao nhiêu?
+
+(c) Nếu anh sinh viên trở về nhà theo cùng con đường đó sau 7 giờ 30 phút kể từ khi rời đi, thì tốc độ trung bình và vận tốc trung bình cho toàn bộ chuyến đi là bao nhiêu?
+
+#### Đáp án
+
+(a) [40.0] km/h
+ 
+(b) [34.3] km/h, [25]$\degree$ đông nam 
+
+(c) Tốc độ trung bình = [3.20] km/h, vận tốc trung bình = [0] km/h
+
