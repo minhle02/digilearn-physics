@@ -43,7 +43,7 @@ class Exercise:
     rate : Rating = Rating.Easy
     static_data : list[tuple[str, str]] = None   # tuple of file path, description
     type : ExerciseType = ExerciseType.Unknown
-    data : MultipleChoiceExercise | SimpleShortAnswerExercise | ShortAnswerWithSubQuestion = None
+    data : MultipleChoiceExercise | SimpleShortAnswerExercise = None
     
     def validate(self):
         '''
@@ -52,8 +52,6 @@ class Exercise:
         match (self.type):
             case (ExerciseType.SHORT_ANSWER):
                 assert(isinstance(self.data, SimpleShortAnswerExercise))
-            case (ExerciseType.SHORT_ANSWER_WITH_SUB_QUESTIONS):
-                assert(isinstance(self.data, ShortAnswerWithSubQuestion))
             case (ExerciseType.MULTIPLE_CHOICE):
                 assert(isinstance(self.data, MultipleChoiceExercise))
             case (ExerciseType.Unknown):
@@ -130,18 +128,22 @@ class MDParser:
     def get_exercise_type(self, question_elements : list[bs4.PageElement]):
         # Multiple choice should startswith this
         choices = ["(A)", "(B)", "(C)", "(D)"]
+        choices_match = {}
 
-        # short answers startswith (a), (b), (c), ... 
-        short_answer_sub_question_regex = re.compile(r"\([a-z]\)")
         for el in question_elements:
             if el.name == "p":
-                # Check match with regex for sub-questions
-                if short_answer_sub_question_regex.search(el.text):
-                    return ExerciseType.SHORT_ANSWER_WITH_SUB_QUESTIONS
-                
-                # Check match with multiple choice. TODO: check all 4, not 1
-                if any(el.text.startswith(choice) for choice in choices):
-                    return ExerciseType.MULTIPLE_CHOICE
+                # Check match with multiple choice. If match, set the choices_match to True
+                for choice in choices:
+                    if el.text.strip().startswith(choice):
+                        choices_match[choice] = True
+        
+        # if there is at least 1 match -> Multiple choice
+        if len(choices_match.keys()) > 0:
+            # if not enough 4 choice
+            if len(choices_match.keys()) != len(choices):
+                raise ValueError("Question is type MultipleChoice, but do not have 4 choices. Please check question:\n{}".format("\n".join(element.text for element in question_elements)))
+            else:
+                return ExerciseType.MULTIPLE_CHOICE
 
         # if no match, should be short answer
         return ExerciseType.SHORT_ANSWER
@@ -319,7 +321,7 @@ class MDParser:
 
 
 if __name__ == "__main__":
-    md_file = "../chapter-02/questions.md"
+    md_file = "../../chapter-02/questions.md"
     parser = MDParser(md_file)
     modules = parser.get_modules()
     print(modules[0].exercises)

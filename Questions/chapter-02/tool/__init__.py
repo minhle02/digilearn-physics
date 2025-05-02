@@ -1,1 +1,0 @@
-from .gen_image import gen_image_for_e1
